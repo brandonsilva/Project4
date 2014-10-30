@@ -1,8 +1,18 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-  cout << "Hello, World" << endl;
+  string name = "World";
+  if (argv[10] == " ")
+    cout << "Hello, " << name << endl;
+  
+  else 
+    {
+     name = argv[11];
+     name.erase(0, 5);
+     cout << "Hello, " << name << endl;
+    }
 }
